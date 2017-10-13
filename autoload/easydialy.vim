@@ -3,7 +3,7 @@ scriptencoding utf-8
 let s:save_cpo = &cpo
 set cpo&vim
 
-let g:easydialy_directory = "~"
+let g:easydialy_directory = "~/"
 
 function! easydialy#open_page_split()
   " 今日の日付を取得
