@@ -8,6 +8,10 @@ let g:loaded_easydialy = 1
 let s:save_cpo = &cpo
 set cpo&vim
 
+if !exists('g:easydialy_directory')
+  let g:easydialy_directory = "~/"
+end
+
 nmap <Space>dt :call easydialy#open_page_split()<CR>
 " nmap <Space>dt :call easydialy#open_page_newtab()<CR>
 
