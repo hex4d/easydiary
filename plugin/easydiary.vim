@@ -12,9 +12,8 @@ if !exists('g:easydiary_directory')
   let g:easydiary_directory = "~/"
 end
 
-nmap <Space>dt :call easydiary#open_page_split()<CR>
-" nmap <Space>dt :call easydiary#open_page_newtab()<CR>
+nmap <silent><Space>dd :call easydiary#open_page_split('day')<CR>
+nmap <silent><Space>dm :call easydiary#open_page_split('month')<CR>
 
 let &cpo = s:save_cpo
 unlet s:save_cpo
-
